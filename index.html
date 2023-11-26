@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-a"></i>
+                        <div class="logo-text">Amit Gunjan Jha </div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images/img.jpg" alt="progile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                        <h1>Amit Gunjan Jha</h1>
+                        <p>Welcome to my digital space! I'm Amit Gunjan Jha, a dedicated student at VIT Bhopal. Passionate about exploring new ideas and opportunities, I thrive on the dynamic intersection of technology and creativity. </p>
+                        <div class="btn-group">
+                            <a href="https://drive.google.com/file/d/1eQDm7vTI3NZ_aGO3bK27Vooiv_LUd-6i/view?usp=sharing" class="btn active">Download Resume</a>
+                            <a href="https://www.linkedin.com/in/amit-gunjan-jha-bb6491216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/amit-gunjan-jha-bb6491216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/imjhaji03"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://instagram.com/imjhaji_03?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        // button click show hide navbar
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector("navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontedn Developer", "UX Designer", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 70,
+            loop: true
+        }) 
+    </script>
+</body>
+
+</html>
